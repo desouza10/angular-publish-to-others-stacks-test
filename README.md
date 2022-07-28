@@ -1,0 +1,1 @@
+# angular-publish-to-others-stacks-test
