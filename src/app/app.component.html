@@ -1,0 +1,15 @@
+<mat-drawer-container class="container" [hasBackdrop]="true">
+    <mat-drawer #drawer value="side">
+        <div class="drawer-content">
+            <h4>Angular App Testing!</h4>
+            <mat-divider></mat-divider>
+            <p class="drawer-content-description">
+                This app was created to test in another app, with any other <br> front-end technology stack!
+            </p>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-poc-header [drawer]="drawer"></app-poc-header>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

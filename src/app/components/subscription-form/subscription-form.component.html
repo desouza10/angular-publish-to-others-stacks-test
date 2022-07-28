@@ -1,0 +1,26 @@
+<section class="flex-container">
+    <div class="flex-container angular-app m16">
+        <h2>This is a Angular App!</h2>
+        <p>This app was created to test in another app, with any other front-end technology stack!</p>
+        <small>Lorem ipsum dolor sit amet consectetur.</small>
+    </div>
+
+    <div class="flex-container form-align">
+        <mat-card class="background-card-form m16">
+            <span>Input your informations!</span>
+
+            <form class="form-controller" [formGroup]="subscriptionForm">
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput id="name" type="text" formControlName="name">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput type="email" formControlName="email" placeholder="Ex: example@example.com">
+                </mat-form-field>
+                <button type="submit" mat-raised-button color="primary" [disabled]="!subscriptionForm.valid"
+                    (click)="onSubmit()">Submit</button>
+            </form>
+        </mat-card>
+    </div>
+</section>
